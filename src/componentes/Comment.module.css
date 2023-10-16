@@ -1,0 +1,98 @@
+.comment{
+    display: grid;
+    grid-template-columns: 3rem 1fr;
+    gap: 1rem;
+}
+
+.comment img{
+    width: 3rem;
+    height: 3rem;
+    box-sizing: initial;
+    border-radius: 8px;
+}
+
+.content{
+    width: 100%;
+    background: var(--gray-700);
+    border-radius: 9px;
+    padding: 1rem;
+}
+
+.content header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.author{
+    display: flex;
+    flex-direction: column;
+}
+
+.author strong{
+    line-height: 1.6;
+    color: var(--gray-100);
+}
+
+.author time{
+    font-size: .75rem;
+    font-weight: 400;
+    line-height: 1.6; 
+}
+
+.content header button{
+    background: transparent;
+    border: none;
+    color: var(--gray-400);
+    cursor: pointer;
+}
+
+.content p{
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--gray-300);
+}
+
+.commentBox footer{
+    margin-top: 1rem;
+    color: var(--gray-400);
+    display: flex;
+    align-items: center;
+    gap: .2rem;
+}
+
+.commentBox footer button{
+    color: var(--gray-400);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    line-height: 0;
+
+    display: flex;
+    align-items: center;
+}
+
+.content header button:hover{
+    color: var(--red-500);
+}
+
+.comment + .comment{
+    margin-top: 1.62rem;
+}
+
+.commentBox footer button:hover{
+    color: var(--green-300);
+}
+
+.commentBox footer button svg{
+    margin-right: 0.5rem;
+}
+
+/*Crinado o pontinho*/
+.commentBox footer button span::before{
+    content: "\2022";
+    padding: 0 0.25rem;
+}
+
